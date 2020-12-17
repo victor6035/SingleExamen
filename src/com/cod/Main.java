@@ -25,20 +25,20 @@ public class Main {
 
     /**
      * aki hay dos metodos que nos sacan por pantalla la conexion y el gmail del usuario
-     * @param u
+     * @param
      * @return
      */
     public static boolean VisualizarConx1(String u)
     {
       Visualizargmails Usuario1 = new Visualizargmails(u);
-      System.out.println("Conectando a " + Usuario1.h + ", con el usuario " + u);
+      System.out.println("Conectando a " + Usuario1.usuario2 + ", con el usuario " + u);
       return Usuario1.conx();
     }
 
     public static boolean VisualizarConx2()
     {
       Visualizargmails Usuario2 = new Visualizargmails();
-      System.out.println("Conectando a " + Usuario2.h + ", con el usuario " + Usuario2.Usuario1);
+      System.out.println("Conectando a " + Usuario2.usuario2 + ", con el usuario " + Usuario2.Usuario1);
       return Usuario2.conx();
       }
 }
