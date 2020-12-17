@@ -2,7 +2,9 @@ package com.cod;
 
 public class Main {
     public static void main(String[] args) {
-
+/**
+ * aki mediante sentencias if else nos muestra si la conexion fallo o no
+ */
       if (VisualizarConx1("pepe@danielcastelao.org"))
       {
         System.out.println("Listo");
@@ -21,17 +23,22 @@ public class Main {
       }
     }
 
+    /**
+     * aki hay dos metodos que nos sacan por pantalla la conexion y el gmail del usuario
+     * @param u
+     * @return
+     */
     public static boolean VisualizarConx1(String u)
     {
       Visualizargmails Usuario1 = new Visualizargmails(u);
       System.out.println("Conectando a " + Usuario1.h + ", con el usuario " + u);
-      return Usuario1.con();
+      return Usuario1.conx();
     }
 
     public static boolean VisualizarConx2()
     {
       Visualizargmails Usuario2 = new Visualizargmails();
-      System.out.println("Conectando a " + Usuario2.h + ", con el usuario " + Usuario2.e);
-      return Usuario2.con();
+      System.out.println("Conectando a " + Usuario2.h + ", con el usuario " + Usuario2.Usuario1);
+      return Usuario2.conx();
       }
 }
