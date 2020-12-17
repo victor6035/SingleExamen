@@ -1,5 +1,9 @@
 package com.cod;
-public class Visualizargmails {
+public class Visualizargmails
+{
+    /**
+     * variables de tipo String
+     */
     String Usuario1 = "";
     String usuario2 = "127.0.0.2";
 
